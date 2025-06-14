@@ -3,7 +3,7 @@ services:
     build: .
     stop_signal: SIGINT
     ports:
-      - "8033:8033"
+      - "8503:8503"
     volumes:
       - ./app:/app
     env_file:

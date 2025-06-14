@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    stop_signal: SIGINT
+    ports:
+      - "8033:8033"
+    volumes:
+      - ./app:/app
+    env_file:
+      - .env
